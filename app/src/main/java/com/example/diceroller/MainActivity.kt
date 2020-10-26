@@ -2,9 +2,9 @@ package com.example.diceroller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.Toast
 import com.example.diceroller.databinding.ActivityMainBinding
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
 
         val rollButton = binding.rollButton
         rollButton.setOnClickListener {
-            Toast.makeText(this, "You pressed the button", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "You pressed the button", Toast.LENGTH_SHORT).show()
+            binding.resultText.text = (Random().nextInt(6) + 1).toString()
         }
     }
 }
