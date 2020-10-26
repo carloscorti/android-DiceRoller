@@ -2,7 +2,6 @@ package com.example.diceroller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import com.example.diceroller.databinding.ActivityMainBinding
 import java.util.*
 

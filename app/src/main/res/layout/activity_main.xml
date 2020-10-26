@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/root_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -16,8 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:contentDescription="@string/dice_image"
-        android:src="@drawable/dice_1" />
-<!--        app:srcCompat="@drawable/dice_1" />-->
+        app:srcCompat="@drawable/empty_dice"
+        tools:src="@drawable/dice_1" />
 
     <TextView
         android:id="@+id/result_text"
