@@ -19,8 +19,11 @@ class MainActivity : AppCompatActivity() {
 
         val rollButton = binding.rollButton
         rollButton.setOnClickListener {
-//            Toast.makeText(this, "You pressed the button", Toast.LENGTH_SHORT).show()
-            binding.resultText.text = (Random().nextInt(6) + 1).toString()
+            rollDice()
         }
+    }
+
+    private fun rollDice() {
+        binding.resultText.text = (Random().nextInt(6) + 1).toString()
     }
 }
